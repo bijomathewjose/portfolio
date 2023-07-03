@@ -1,0 +1,63 @@
+.container {
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.p {
+    position: relative;
+    right: 0;
+    color: #131313;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    align-self: flex-end;
+    padding-bottom: 80px;
+    animation-name: rollout;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.box .hey-i-m-bijo-i {
+    color: #131313;
+    text-align: left;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+@keyframes rollout {
+    0%{
+        opacity: 0;
+        right: -100%;
+        
+    }
+    100%{
+        opacity: 1;
+        right: 0;
+    }
+}
+.showSLowly{
+    position: relative;
+    left: 0;
+    animation: slowly 1500ms ease-in-out 0 1 ;
+}
+
+@keyframes slowly {
+    0%{
+        opacity: 0;
+        left: -100%;
+        
+    }
+    100%{
+        opacity: 1;
+        left: 0;
+    }
+}

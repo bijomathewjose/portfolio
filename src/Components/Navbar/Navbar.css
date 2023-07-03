@@ -1,0 +1,38 @@
+ .overlap-group {
+    display: flex;
+    padding:0 1rem 0 2.5rem;
+    width: 0px;
+    border-radius:0 0 30px 0 ;
+    box-shadow: inset -13px -14px 11px 0px rgba(0, 0, 0, 0.22), -2px 8px 20px 6px rgba(0, 0, 0, 0.5);
+    transition: width  1500ms;
+}
+.overlap-group:hover {
+    width: 200px;
+}
+.overlap-group:hover .cover {
+    display: flex;
+    opacity: 1;
+}
+.cover {
+    position: fixed;
+    display: none;
+    overflow-x: hidden;
+    opacity: 0;
+    flex-direction: column;
+    padding-top: calc(10vh);
+    height: calc(100vh - 10vh);
+    gap: 6vh;
+    transition: width 1500ms,opacity 1000ms;
+}
+.box .text-wrapper {
+    display: flex;
+    overflow: hidden;
+    width:180px;
+    color: #131313;
+    text-align: left;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    word-break: keep-all;
+}
